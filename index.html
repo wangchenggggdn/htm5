@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shap10r - How To Play | Shaplor Color Puzzle Game</title>
+    <meta
+      name="description"
+      content="Shap10r game is a vibrant and challenging game that combines elements of Wordle™ and Mastermind®."
+    />
+    <meta
+      name="keywords"
+      content="Shap10r, Shap10r game, Shap10r Gameplay, Puzzle Game, Shap10r android, Shap10r app"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" hreflang="" href="" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="fixed w-full bg-black/80 backdrop-blur-md z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0">
+            <a href="/" class="text-white text-2xl font-bold" data-lang="brand"
+              >Shap10r</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="/"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                data-lang="home"
+                >Home</a
+              >
+              <a
+                href="/about"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                data-lang="about"
+                >About</a
+              >
+              <a
+                href="/contact"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                data-lang="contact"
+                >Contact</a
+              >
+              <select
+                id="language-select"
+                class="bg-transparent text-white border border-gray-600 rounded px-2 py-1"
+              >
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="main-content">
+      <!-- Content will be dynamically inserted here -->
+    </div>
+
+    <template id="home-template">
+      <!-- Hero Section -->
+      <section class="h-screen flex items-center justify-center">
+        <div class="text-center">
+          <h1 class="text-6xl font-bold mb-6" data-lang="hero-title">
+            Welcome to Shap10r
+          </h1>
+          <p class="text-xl text-gray-400 mb-8" data-lang="hero-subtitle">
+            Experience gaming evolution
+          </p>
+          <a
+            href="#"
+            class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition-colors"
+            data-lang="learn-more"
+            >Play Free</a
+          >
+        </div>
+      </section>
+
+      <!-- Game Screenshots -->
+      <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <img
+              src="https://shap10r-game.online/images/1733232544054.jpg"
+              alt="Gameplay Screenshot 1"
+              class="rounded-lg shadow-xl hover:scale-105 transition-transform"
+            />
+            <img
+              src="https://shap10r-game.online/images/1733232544054.jpg"
+              alt="Gameplay Screenshot 2"
+              class="rounded-lg shadow-xl hover:scale-105 transition-transform"
+            />
+            <img
+              src="https://shap10r-game.online/images/1733232544054.jpg"
+              alt="Gameplay Screenshot 3"
+              class="rounded-lg shadow-xl hover:scale-105 transition-transform"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Player Videos -->
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl font-bold mb-12 text-center"
+            data-lang="movies-title"
+          >
+            About Shap10r Game Movies
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                id="myVideo"
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/video1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                id="myVideo"
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/video2"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                id="myVideo"
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/video3"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Game Features -->
+      <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl font-bold mb-12 text-center"
+            data-lang="about-title"
+          >
+            All about Shap10r you need to know
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Immersive Gameplay</h3>
+              <p class="text-gray-400">
+                Experience stunning visuals and engaging mechanics that will
+                keep you hooked for hours.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Multiplayer Action</h3>
+              <p class="text-gray-400">
+                Challenge your friends or compete against players worldwide in
+                intense matches.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Regular Updates</h3>
+              <p class="text-gray-400">
+                Enjoy new content, features, and improvements with our frequent
+                game updates.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Custom Characters</h3>
+              <p class="text-gray-400">
+                Create and customize your unique character with countless
+                possibilities.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Rich Story</h3>
+              <p class="text-gray-400">
+                Dive into an engaging narrative filled with twists and memorable
+                characters.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Community Events</h3>
+              <p class="text-gray-400">
+                Participate in special events and earn exclusive rewards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl font-bold mb-12 text-center"
+            data-lang="faq-title"
+          >
+            FAQ About Shap10r Game
+          </h2>
+          <div class="space-y-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">
+                What are the system requirements?
+              </h3>
+              <p class="text-gray-400">
+                Detailed system requirements for optimal gameplay experience.
+              </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">Is multiplayer free?</h3>
+              <p class="text-gray-400">
+                Information about multiplayer features and pricing.
+              </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">
+                How often do you release updates?
+              </h3>
+              <p class="text-gray-400">
+                Details about update schedule and content releases.
+              </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">
+                Can I transfer my progress between devices?
+              </h3>
+              <p class="text-gray-400">
+                Information about cross-platform progress synchronization.
+              </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-2">
+                How do I report bugs or issues?
+              </h3>
+              <p class="text-gray-400">
+                Guidelines for reporting technical issues and getting support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4" data-lang="brand">Shap10r</h3>
+            <p class="text-gray-400" data-lang="brand-blurb">
+              Experience the future of gaming
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4" data-lang="bottom-terms">
+              Terms of Use
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="/about" class="hover:text-white">Terms</a></li>
+              <li><a href="#" class="hover:text-white">Licenses</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4" data-lang="bottom-privacy">
+              Privacy Policy
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="/privacy" class="hover:text-white">Privacy</a></li>
+              <li><a href="#" class="hover:text-white">Cookies</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-lg font-semibold mb-4"
+              data-lang="bottom-contact-us"
+            >
+              Contact Us
+            </h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="/contact" class="hover:text-white">Support</a></li>
+              <li>
+                <a
+                  href="mailto:someone@example.com?subject=Hello&body=."
+                  class="hover:text-white"
+                  >Feedback</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <p class="text-center text-gray-400">
+            &copy; 2024 <i data-lang="brand">Shap10r</i>. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
